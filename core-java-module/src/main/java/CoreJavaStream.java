@@ -69,7 +69,11 @@ public class CoreJavaStream {
     return list.stream().limit(3).reduce(0, (ans, i) -> ans + i);
   }
 
-
+  /**
+   * Driver Code
+   *
+   * @param args
+   */
   public static void main(String[] args) {
     CoreJavaStream coreJavaStream = new CoreJavaStream();
     List<Integer> list = Arrays.asList(2, 4, 3, 5, 3, 4, 2);
