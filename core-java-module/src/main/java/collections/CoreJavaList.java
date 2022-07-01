@@ -59,14 +59,13 @@ public class CoreJavaList<T> {
   }
 
   /**
-   * Prints the List elements.
+   * Get the List elements.
    *
    * @param list
+   * @return list
    */
-  public void printList(List<T> list) {
-    for (T i : list) {
-      System.out.println(i);
-    }
+  public List<T> getList(List<T> list) {
+    return list;
   }
 
   /***
