@@ -1,7 +1,6 @@
 package stream;
 
 import org.junit.Test;
-import stream.CoreJavaStream;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
