@@ -2,6 +2,7 @@ package collections;
 
 import java.util.HashSet;
 import java.util.LinkedHashSet;
+import java.util.Set;
 import java.util.SortedSet;
 import java.util.TreeSet;
 
@@ -44,31 +45,35 @@ public class CoreJavaSet<T> {
     return treeSet;
   }
 
-  public void setTreeSet(TreeSet<T> treeSet) {
-    this.treeSet = treeSet;
+  public void setTreeSet(Set<T> treeSet) {
+    if (treeSet instanceof TreeSet)
+      this.treeSet = (TreeSet<T>) treeSet;
   }
 
   public HashSet<T> getHashSet() {
     return hashSet;
   }
 
-  public void setHashSet(HashSet<T> hashSet) {
-    this.hashSet = hashSet;
+  public void setHashSet(Set<T> hashSet) {
+    if (hashSet instanceof HashSet)
+      this.hashSet = (HashSet<T>) hashSet;
   }
 
   public LinkedHashSet<T> getLinkedHashSet() {
     return linkedHashSet;
   }
 
-  public void setLinkedHashSet(LinkedHashSet<T> linkedHashSet) {
-    this.linkedHashSet = linkedHashSet;
+  public void setLinkedHashSet(Set<T> linkedHashSet) {
+    if (linkedHashSet instanceof LinkedHashSet)
+      this.linkedHashSet = (LinkedHashSet<T>) linkedHashSet;
   }
 
   public SortedSet<T> getSortedSet() {
     return sortedSet;
   }
 
-  public void setSortedSet(SortedSet<T> sortedSet) {
-    this.sortedSet = sortedSet;
+  public void setSortedSet(Set<T> sortedSet) {
+    if (sortedSet instanceof SortedSet)
+      this.sortedSet = (SortedSet<T>) sortedSet;
   }
 }
