@@ -23,7 +23,7 @@ public class CoreJavaSetTest {
   }
 
   @Test
-  public void addElementToTheSetTest() {
+  public void treeSetTest() {
     coreJavaSet.getTreeSet().add(1);
     assertEquals(Set.of(1, 2, 3), coreJavaSet.getTreeSet());
 
@@ -38,5 +38,23 @@ public class CoreJavaSetTest {
 
     assertTrue(coreJavaSet.getTreeSet().contains(7));
     assertTrue(coreJavaSet.getTreeSet().containsAll(Set.of(5, 7, 9)));
+  }
+
+  @Test
+  public void hashSetTest() {
+    coreJavaSet.getHashSet().add(2);
+    assertEquals(Set.of(1, 2, 3, 4, 5), coreJavaSet.getHashSet());
+
+    coreJavaSet.getHashSet().addAll(Set.of(1, 2, 3));
+    assertEquals(Set.of(1, 2, 3, 4, 5), coreJavaSet.getHashSet());
+
+    coreJavaSet.getHashSet().remove(1);
+    assertEquals(Set.of(2, 3, 4, 5), coreJavaSet.getHashSet());
+
+    coreJavaSet.getHashSet().removeAll(Set.of(1, 2, 3));
+    assertEquals(Set.of(4, 5), coreJavaSet.getHashSet());
+
+    assertTrue(coreJavaSet.getHashSet().contains(4));
+    assertTrue(coreJavaSet.getHashSet().containsAll(Set.of(4, 5)));
   }
 }
