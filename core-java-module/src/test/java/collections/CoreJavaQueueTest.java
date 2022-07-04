@@ -19,8 +19,6 @@ public class CoreJavaQueueTest {
 
   @Test
   public void testPriorityQueue() {
-    System.out.println(coreJavaQueue.getPriorityQueue());
-
     assertEquals(ofNullable(1), ofNullable(coreJavaQueue.getPriorityQueue().peek()));
     assertEquals(ofNullable(1), ofNullable(coreJavaQueue.getPriorityQueue().poll()));
   }
