@@ -1,7 +1,5 @@
 package collections;
 
-import com.sun.jmx.remote.internal.ArrayQueue;
-
 import java.util.PriorityQueue;
 import java.util.Queue;
 
