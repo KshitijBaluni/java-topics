@@ -13,7 +13,6 @@ import java.util.Queue;
  */
 public class CoreJavaQueue<T> {
   private Queue<T> priorityQueue;
-  private Queue<T> arrayQueue;
 
   /**
    * Default Constructor.
@@ -25,11 +24,9 @@ public class CoreJavaQueue<T> {
    * Parameterised Constructor.
    *
    * @param priorityQueue
-   * @param arrayQueue
    */
-  public CoreJavaQueue(Queue<T> priorityQueue, Queue<T> arrayQueue) {
+  public CoreJavaQueue(Queue<T> priorityQueue) {
     this.priorityQueue = priorityQueue;
-    this.arrayQueue = arrayQueue;
   }
 
   /**
@@ -51,26 +48,5 @@ public class CoreJavaQueue<T> {
       this.priorityQueue = priorityQueue;
     else
       this.priorityQueue = null;
-  }
-
-  /**
-   * Return Array Queue.
-   *
-   * @return arrayQueue
-   */
-  public Queue<T> getArrayQueue() {
-    return arrayQueue instanceof ArrayQueue ? arrayQueue : null;
-  }
-
-  /**
-   * Set Array Queue.
-   *
-   * @param arrayQueue
-   */
-  public void setArrayQueue(Queue<T> arrayQueue) {
-    if (arrayQueue instanceof ArrayQueue)
-      this.arrayQueue = arrayQueue;
-    else
-      this.arrayQueue = null;
   }
 }
