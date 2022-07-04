@@ -57,4 +57,22 @@ public class CoreJavaSetTest {
     assertTrue(coreJavaSet.getHashSet().contains(4));
     assertTrue(coreJavaSet.getHashSet().containsAll(Set.of(4, 5)));
   }
+
+  @Test
+  public void linkedHashSetTest() {
+    coreJavaSet.getLinkedHashSet().add(4);
+    assertEquals(Set.of(1, 2, 3, 4), coreJavaSet.getLinkedHashSet());
+
+    coreJavaSet.getLinkedHashSet().addAll(Set.of(4, 5, 6));
+    assertEquals(Set.of(1, 2, 3, 4, 5, 6), coreJavaSet.getLinkedHashSet());
+
+    coreJavaSet.getLinkedHashSet().remove(1);
+    assertEquals(Set.of(2, 3, 4, 5, 6), coreJavaSet.getLinkedHashSet());
+
+    coreJavaSet.getLinkedHashSet().removeAll(Set.of(1, 2, 3));
+    assertEquals(Set.of(4, 5, 6), coreJavaSet.getLinkedHashSet());
+
+    assertTrue(coreJavaSet.getLinkedHashSet().contains(4));
+    assertTrue(coreJavaSet.getLinkedHashSet().containsAll(Set.of(4, 5)));
+  }
 }
