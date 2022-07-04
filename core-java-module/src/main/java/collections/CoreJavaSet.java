@@ -1,5 +1,6 @@
 package collections;
 
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.Set;
@@ -41,7 +42,10 @@ public class CoreJavaSet<T> {
   }
 
   public void setTreeSet(Set<T> treeSet) {
-    this.treeSet = treeSet;
+    if (treeSet instanceof TreeSet)
+      this.treeSet = treeSet;
+    else
+      this.treeSet = Collections.emptySet();
   }
 
   public Set<T> getHashSet() {
@@ -49,7 +53,10 @@ public class CoreJavaSet<T> {
   }
 
   public void setHashSet(Set<T> hashSet) {
-    this.hashSet = hashSet;
+    if (hashSet instanceof HashSet)
+      this.hashSet = hashSet;
+    else
+      this.hashSet = Collections.emptySet();
   }
 
   public Set<T> getLinkedHashSet() {
@@ -57,6 +64,10 @@ public class CoreJavaSet<T> {
   }
 
   public void setLinkedHashSet(Set<T> linkedHashSet) {
-    this.linkedHashSet = linkedHashSet;
+
+    if (linkedHashSet instanceof LinkedHashSet)
+      this.linkedHashSet = linkedHashSet;
+    else
+      this.linkedHashSet = Collections.emptySet();
   }
 }

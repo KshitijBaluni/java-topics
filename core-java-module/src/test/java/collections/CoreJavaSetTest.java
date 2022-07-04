@@ -7,6 +7,7 @@ import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.Set;
 import java.util.TreeSet;
+import java.util.stream.Collectors;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -38,6 +39,14 @@ public class CoreJavaSetTest {
 
     assertTrue(coreJavaSet.getTreeSet().contains(7));
     assertTrue(coreJavaSet.getTreeSet().containsAll(Set.of(5, 7, 9)));
+
+    coreJavaSet.setTreeSet(new TreeSet<>(Set.of(4, 1, 7, 9, 3)));
+    assertEquals(Set.of(4, 1, 7, 9, 3), coreJavaSet.getTreeSet());
+    assertEquals(Set.of(1, 3, 4, 7, 9), coreJavaSet.getTreeSet());
+
+    coreJavaSet
+      .setTreeSet(coreJavaSet.getTreeSet().stream().map(x -> x * x).collect(Collectors.toCollection(TreeSet::new)));
+    assertEquals(Set.of(1, 9, 16, 49, 81), coreJavaSet.getTreeSet());
   }
 
   @Test
