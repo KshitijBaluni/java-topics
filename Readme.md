@@ -11,7 +11,7 @@ Core Java Topics... Version 1.0
 10. Final Keywords
 11. Inner Class in Java
 12. Super & This Keyword
-13. Opps Concepts
+13. OOPS Concepts
 14. Encapsulation
 15. Inheritance
 16. Polymorphism
@@ -20,8 +20,8 @@ Core Java Topics... Version 1.0
 19. Streams Api
 20. Collections framework
 21. Serialization
-22. Exception Handeling in Java
-23. Java Anotation
+22. Exception Handling in Java
+23. Java Annotation
 24. Reflection in Java
 25. Java Array
 26. String ,String Buffer String Builder
@@ -30,3 +30,17 @@ Core Java Topics... Version 1.0
 29. Agile
 30. Design Pattern
 31. Databases
+
+Other Advance Concepts(Interview):
+1. Solid Design Patterns
+2. Immutable class (how to make List immutable)
+3. Shallow and Deep Copy
+4. Singleton Design Pattern (how to fail singleton Design Pattern (Using threads))
+5. Serialization Concepts
+6. Marshalling and UnMarshalling (JAXB)
+7. JWT 
+8. Spring Security
+9. ack and nack
+10. Durable Subscriber
+11. Async Transaction
+12. Saga and 2 phase commit
