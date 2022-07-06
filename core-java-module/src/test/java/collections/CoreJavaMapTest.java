@@ -60,6 +60,18 @@ public class CoreJavaMapTest {
     coreJavaMap.getLinkedHashMap().putIfAbsent(10, 9);
     assertEquals(Map.of(1, 8, 2, 8, 10, 9), coreJavaMap.getLinkedHashMap());
 
+    coreJavaMap.getLinkedHashMap().putIfAbsent(null, 9);
+    assertEquals(Optional.of(9), Optional.of(coreJavaMap.getLinkedHashMap().get(null)));
+    LinkedHashMap<Integer, Integer> linkedHashMap = new LinkedHashMap<>();
+    linkedHashMap.put(1, 8);
+    linkedHashMap.put(2, 8);
+    linkedHashMap.put(10, 9);
+    linkedHashMap.put(null, 9);
+    assertEquals(
+      Optional.of(linkedHashMap),
+      Optional.of(coreJavaMap.getLinkedHashMap())
+    );
+
     coreJavaMap.getLinkedHashMap().clear();
     assertEquals(Map.of(), coreJavaMap.getLinkedHashMap());
   }
