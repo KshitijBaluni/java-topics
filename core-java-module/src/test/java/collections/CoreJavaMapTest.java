@@ -51,4 +51,16 @@ public class CoreJavaMapTest {
     assertTrue(coreJavaMap.getTreeMap().containsKey(2));
     assertEquals(Optional.of(7), Optional.of(coreJavaMap.getTreeMap().get(6)));
   }
+
+  @Test
+  public void linkedHashMap() {
+    coreJavaMap.getLinkedHashMap().putIfAbsent(1, 9);
+    assertEquals(Map.of(1, 8, 2, 8), coreJavaMap.getLinkedHashMap());
+
+    coreJavaMap.getLinkedHashMap().putIfAbsent(10, 9);
+    assertEquals(Map.of(1, 8, 2, 8, 10, 9), coreJavaMap.getLinkedHashMap());
+
+    coreJavaMap.getLinkedHashMap().clear();
+    assertEquals(Map.of(), coreJavaMap.getLinkedHashMap());
+  }
 }
