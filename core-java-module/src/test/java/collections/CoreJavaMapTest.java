@@ -19,7 +19,7 @@ public class CoreJavaMapTest {
   @Before
   public void init() {
     coreJavaMap = new CoreJavaMap<>(new HashMap(Map.of(1, 6, 2, 3)), new TreeMap(
-      Map.of(1, 4, 2, 8)), new LinkedHashMap(Map.of(1, 8, 2, 8)));
+      Map.of(2, 8, 1, 9)), new LinkedHashMap(Map.of(1, 8, 2, 8)));
   }
 
   @Test
@@ -37,5 +37,18 @@ public class CoreJavaMapTest {
     assertTrue(coreJavaMap.getHashMap().containsValue(3));
   }
 
+  @Test
+  public void treeMapTest() {
+    coreJavaMap.getTreeMap().put(1, 9);
+    assertEquals(Map.of(2, 8, 1, 9), coreJavaMap.getTreeMap());
 
+    coreJavaMap.getTreeMap().putAll(Map.of(1, 9, 8, 9, 6 ,7));
+    assertEquals(Map.of(2, 8, 1, 9,8, 9, 6 ,7), coreJavaMap.getTreeMap());
+
+    coreJavaMap.getTreeMap().remove(1, 9);
+    assertEquals(Map.of(2, 8,8, 9, 6 ,7), coreJavaMap.getTreeMap());
+
+    assertTrue(coreJavaMap.getTreeMap().containsKey(2));
+    assertEquals(Optional.of(7), Optional.of(coreJavaMap.getTreeMap().get(6)));
+  }
 }
