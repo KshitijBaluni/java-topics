@@ -1,6 +1,8 @@
 package thread;
 
 /**
+ * Core Java Demo for Threads.
+ *
  * @author kshitijbaluni
  * @since 9 July 2022
  */

@@ -1,6 +1,8 @@
 package thread;
 
 /**
+ * Core Java demo for Runnable implementations.
+ *
  * @author kshitijbaluni
  * @since 9 July 2022
  */
