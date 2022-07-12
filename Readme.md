@@ -44,7 +44,8 @@ Other Advance Concepts(Interview):
 10. Durable Subscriber
 11. Async Transaction
 12. Saga and 2 phase commit
-13. Java 11 feature to make http request
-14. Callable and Executer Design Pattern
+13. Java 11 feature to make http request (HTTP client API)
+14. Callable and Executer Design Pattern (https://www.geeksforgeeks.org/callable-future-java/)
+    (https://www.geeksforgeeks.org/what-is-java-executor-framework/)
 15. Docker Containers
 16. ECS and EKS for docker container managements
