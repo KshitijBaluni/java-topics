@@ -29,7 +29,6 @@ public class CoreJavaFactoryMethod {
     professionList.add(ProfessionFactory.getProfession(ProfessionFactory.ProfessionTypes.DOCTOR));
     professionList.add(ProfessionFactory.getProfession(ProfessionFactory.ProfessionTypes.ENGINEER));
     professionList.add(ProfessionFactory.getProfession(ProfessionFactory.ProfessionTypes.TEACHER));
-    professionList.add(null);
     return professionList;
   }
 }

@@ -17,18 +17,14 @@ public class ProfessionFactory {
    * @return profession object
    */
   public static Profession getProfession(ProfessionTypes professionType) {
-    if (professionType == null) {
-      return null;
+    if(professionType != null) {
+      if (professionType.equals(ProfessionTypes.DOCTOR))
+        return new Doctor();
+      else if (professionType.equals(ProfessionTypes.ENGINEER))
+        return new Engineer();
+      else if (professionType.equals(ProfessionTypes.TEACHER))
+        return new Teacher();
     }
-
-    if (professionType.equals(ProfessionTypes.DOCTOR)) {
-      return new Doctor();
-    } else if (professionType.equals(ProfessionTypes.ENGINEER)) {
-      return new Engineer();
-    } else if (professionType.equals(ProfessionTypes.TEACHER)) {
-      return new Teacher();
-    }
-
     return null;
   }
 }
