@@ -15,8 +15,11 @@ public class CoreJavaAbstractFactory {
    * @return Profession object
    */
   public Profession getProfession() {
+    return this.profession;
+  }
+
+  public void setProfession(AbstractFactory.ProfessionTypes profession, boolean isTrainee) {
     this.profession =
-      AbstractFactoryProducer.getProfession(true).getProfession(AbstractFactory.ProfessionTypes.ENGINEER);
-    return profession;
+      AbstractFactoryProducer.getProfession(isTrainee).getProfession(profession);
   }
 }
