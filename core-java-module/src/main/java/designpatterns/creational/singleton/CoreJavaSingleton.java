@@ -1,6 +1,5 @@
 package designpatterns.creational.singleton;
 
-import java.util.logging.LogManager;
 import java.util.logging.Logger;
 
 /***
