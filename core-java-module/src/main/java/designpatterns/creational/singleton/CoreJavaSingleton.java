@@ -11,7 +11,7 @@ import java.util.logging.Logger;
  */
 public class CoreJavaSingleton {
   private static CoreJavaSingleton coreJavaSingleton = new CoreJavaSingleton();
-  private static final Logger logger = LogManager.getLogManager().getLogger(CoreJavaSingleton.class.getName());
+  private static final Logger LOGGER = Logger.getLogger(CoreJavaSingleton.class.getName());
 
   /**
    * Private constructor
@@ -32,6 +32,6 @@ public class CoreJavaSingleton {
    * Simple method to log the hashcode of the singleton object.
    */
   public void simpleMethod() {
-    logger.info("Hashcode of singleton object -" + coreJavaSingleton);
+    LOGGER.info("Hashcode of singleton object -" + coreJavaSingleton);
   }
 }
