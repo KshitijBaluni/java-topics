@@ -1,21 +1,27 @@
 package designpatterns.creational.builder;
 
+/**
+ * Concrete Builder for FloodResistance Home.
+ *
+ * @author kshitijbaluni
+ * @since 14 July 2022
+ */
 public class FloodResistanceBuilder implements  Builder{
   private Home floodResistanceHome = new Home();
 
   @Override
   public void buildFloor() {
-    floodResistanceHome.floor = "10 Feets above ground level";
+    floodResistanceHome.setFloor("10 Feets above ground level");
   }
 
   @Override
   public void buildWalls() {
-    floodResistanceHome.wall = "Water resistance walls";
+    floodResistanceHome.setWall("Water resistance walls");
   }
 
   @Override
   public void buildTerrace() {
-    floodResistanceHome.terrace = "water leakage resistance terrace";
+    floodResistanceHome.setTerrace("water leakage resistance terrace");
   }
 
   @Override

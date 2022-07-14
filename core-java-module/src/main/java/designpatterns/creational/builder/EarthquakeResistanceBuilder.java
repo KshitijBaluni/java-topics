@@ -1,21 +1,27 @@
 package designpatterns.creational.builder;
 
+/**
+ * Concrete class for Earthquake Resistance Home.
+ *
+ * @author kshitijbaluni
+ * @since 14 July 2022
+ */
 public class EarthquakeResistanceBuilder implements Builder {
   private Home earthquakeResistanceHome = new Home();
 
   @Override
   public void buildFloor() {
-    earthquakeResistanceHome.floor = "Wooden Floor";
+    earthquakeResistanceHome.setFloor("Wooden Floor");
   }
 
   @Override
   public void buildWalls() {
-    earthquakeResistanceHome.wall = "Wooden walls";
+    earthquakeResistanceHome.setWall("Wooden walls");
   }
 
   @Override
   public void buildTerrace() {
-    earthquakeResistanceHome.terrace = "Wooden terrace";
+    earthquakeResistanceHome.setTerrace("Wooden terrace");
   }
 
   @Override
