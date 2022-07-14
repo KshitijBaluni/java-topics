@@ -5,7 +5,7 @@ import java.util.Hashtable;
 public class ProfessionCache {
   private static Hashtable<Integer, Profession> hashtable = new Hashtable<>();
 
-  public static Profession getClonedProfession(int id) {
+  public static Profession getClonedProfession(int id) throws CloneNotSupportedException {
     Profession professionInstance = hashtable.get(id);
     return (Profession) professionInstance.cloningMethod();
   }
