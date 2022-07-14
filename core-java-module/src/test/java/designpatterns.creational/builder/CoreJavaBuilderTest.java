@@ -1,5 +1,6 @@
 package designpatterns.creational.builder;
 
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -16,8 +17,17 @@ public class CoreJavaBuilderTest {
     Director director = coreJavaBuilder.getDirector();
     Home home = director.getComplexHomeObject();
     director.manageRequiredHomeConstruction();
-    System.out.println(home.floor);
-    System.out.println(home.terrace);
-    System.out.println(home.wall);
+    Assert.assertEquals("Wooden Floor", home.getFloor());
+    Assert.assertEquals("Wooden walls", home.getWall());
+    Assert.assertEquals("Wooden terrace", home.getTerrace());
+
+    coreJavaBuilder.setDirector(new Director(new FloodResistanceBuilder()));
+    director = coreJavaBuilder.getDirector();
+    home = director.getComplexHomeObject();
+    director.manageRequiredHomeConstruction();
+    Assert.assertEquals("10 Feets above ground level", home.getFloor());
+    Assert.assertEquals("Water resistance walls", home.getWall());
+    Assert.assertEquals("water leakage resistance terrace", home.getTerrace());
+
   }
 }
