@@ -5,13 +5,15 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class CoreJavaSerializationTest {
+  private final static Logger logger = Logger.getLogger(CoreJavaSerializationTest.class.getName());
   private CoreJavaSerialization coreJavaSerialization;
 
   @Before
@@ -44,11 +46,9 @@ public class CoreJavaSerializationTest {
       fileOutputStream.close();
       objectOutputStream.close();
 
-      System.out.println("Core Java Serialization object is serialized");
-    } catch (FileNotFoundException e) {
-      e.printStackTrace();
+      logger.info("Core Java Serialization object is serialized");
     } catch (IOException e) {
-      e.printStackTrace();
+      logger.log(Level.SEVERE, e.getMessage());
     }
 
     try {
@@ -62,12 +62,13 @@ public class CoreJavaSerializationTest {
       fileInputStream.close();
       objectInputStream.close();
 
-    } catch (FileNotFoundException e) {
-      e.printStackTrace();
-    } catch (IOException e) {
-      e.printStackTrace();
-    } catch (ClassNotFoundException e) {
-      e.printStackTrace();
+    } catch (IOException | ClassNotFoundException e) {
+      logger.log(Level.SEVERE, e.getMessage());
     }
+
+    CoreJavaSerialization.CoreJavaSerializationBuilder coreJavaSerializationBuilder = CoreJavaSerialization.builder();
+    CoreJavaSerialization testObject = coreJavaSerializationBuilder.build();
+    String coreJavaSerializationBuilderString = CoreJavaSerialization.builder().id(4).name("ToString").toString();
+    logger.info(coreJavaSerializationBuilderString);
   }
 }
