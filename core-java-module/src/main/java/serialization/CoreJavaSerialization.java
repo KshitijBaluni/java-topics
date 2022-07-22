@@ -16,6 +16,8 @@ import java.io.Serializable;
 @Getter
 @Builder
 public class CoreJavaSerialization implements Serializable {
+  private static final long serialversionUID = 129348938L;
+
   private int id;
   private String name;
 }
