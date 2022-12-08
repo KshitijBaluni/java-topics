@@ -6,8 +6,13 @@ package programs.math;
  * @since 07 Dec 2022
  */
 public class PowerOfTwo {
-
-    boolean Pow(int n) {
+    /**
+     * Is power of 2 or not
+     *
+     * @param n- to check if its power of 2
+     * @return true or false
+     */
+    boolean pow(int n) {
         if (n == 0 || n==1)
             return false;
 
@@ -17,17 +22,5 @@ public class PowerOfTwo {
             n = n / 2;
         }
         return true;
-    }
-
-    public static void main(String[] args) {
-        int n = 2;
-        PowerOfTwo powerOfTwo=new PowerOfTwo();
-        boolean po2=powerOfTwo.Pow(n);
-        if (po2){
-            System.out.println("yes");
-        }
-        else{
-            System.out.println("no");
-        }
     }
 }
