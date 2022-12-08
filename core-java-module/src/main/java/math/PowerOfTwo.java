@@ -1,4 +1,4 @@
-package programs.math;
+package math;
 /**
  * Power Of Two
  *
