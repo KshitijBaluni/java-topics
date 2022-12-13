@@ -2,7 +2,7 @@ package programs.String;
 /**
  * Binary String
  *
- * @author AnkitRawat
+ * @author Ankit Rawat
  * @since 09 Dec 2022
  */
 public class BinaryString {
