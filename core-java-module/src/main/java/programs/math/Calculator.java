@@ -1,16 +1,31 @@
 package programs.math;
 
-public class calculator {
+/**
+ * Calculator
+ *
+ * @author
+ * @since
+ */
+public class Calculator {
     private int x;
     private int y;
     private int z;
 
 
-    public  calculator(int x, int y){
+    /**
+     * Parameterized Constructor.
+     *
+     * @param x input x
+     * @param y input y
+     */
+    public Calculator(int x, int y){
         this.x=x;
         this.y=y;
     }
 
+    /**
+     * Add x and y
+     */
     public void add(){
         System.out.println(x+y);
     }
@@ -24,6 +39,10 @@ public class calculator {
         System.out.println(x*y);
     }
 
+    /**
+     * Add x y
+     * @return sum z
+     */
     public int addr(){
         z=x+y;
         return z;
