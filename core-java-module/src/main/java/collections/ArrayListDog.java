@@ -1,4 +1,7 @@
 package collections;
+
+import java.security.PrivateKey;
+
 /**
  * Arraylist
  *
@@ -7,13 +10,11 @@ package collections;
  */
 public class ArrayListDog {
     /**
-     *Create an arraylist of Dog's breed name
+     *Created a static class Dog
      */
     public static class Dog {
-        String breed;
-
+       private String breed;
         public Dog(){
-
         }
 
         public String getBreed() {

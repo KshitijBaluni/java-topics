@@ -1,20 +1,22 @@
 package exception;
+/**
+ * Arithmetic exception
+ *
+ * @author AnkitRawat
+ * @since 14 Dec 2022
+ */
 
 public class ArithmeticException {
     /**
-     * Arithmetic exception
+     * Divide x by y and catch arithmetic exception
+     * Unchecked Exception
      *
-     * @author AnkitRawat
-     * @since 14 Dec 2022
+     * @param x-Nominator number
+     * @param y- Denominator number
      */
+
     public void artemis(int x, int y) {
-        /**
-         * Divide x by y and catch arithmetic exception
-         * Unchecked Exception
-         *
-         * @param x-Nominator number
-         * @param y- Denominator number
-         */
+
         int div;
         try {
             div = x / y;
