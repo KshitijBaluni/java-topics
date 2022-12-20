@@ -17,6 +17,5 @@ public class AppendInArraylist {
     public int  arrayFind(int x){
         fia.add(x);
         return (fia.get(fia.size()-1));
-
     }
 }

@@ -1,6 +1,7 @@
 package collections;
 
 import java.util.ArrayList;
+
 /**
  * Find element and index of Arraylist
  *
@@ -9,19 +10,17 @@ import java.util.ArrayList;
  */
 public class FindElementInArraylist {
     /**
-     *Find element and index of Arraylist
+     * Find element and index of Arraylist
      *
      * @param fia-arraylist
-     * @param x-element to find
+     * @param x-element     to find
      * @return i- Element's index
      */
-    public int  arrayFind(ArrayList<Integer> fia, int x){
-        int result =0;
-        for (int i = 0; i < fia.size(); i++)
-        {
-            //System.out.println( fia.get(i));
-            int y= (int) fia.get(i);
-            if (y==x){
+    public int arrayFind(ArrayList<Integer> fia, int x) {
+        int result = 0;
+        for (int i = 0; i < fia.size(); i++) {
+            int y = (int) fia.get(i);
+            if (y == x) {
                 return i;
             }
         }
