@@ -11,23 +11,26 @@ public class ArrayListDog {
      */
     public static class Dog {
         String breed;
+        /**
+         *Parameterized Constructor
+         *
+         * @param breed
+         */
         public Dog(String breed)
         {
             this.breed=breed;
         }
-
-        public Dog(){
-
-        }
+        /**
+         *non-Parameterized Constructor
+         *
+         */
+        public Dog(){}
         /**
          * Get breed name
          *
          * @return breed
          */
-        public String getBreed() {
-
-            return breed;
-        }
+        public String getBreed() {return breed;}
         /**
          * Set breed name
          *
@@ -37,13 +40,5 @@ public class ArrayListDog {
         {
             this.breed = breed;
         }
-
-        /**
-         *Parameterized Constructor
-         *
-         * @param breed
-         */
-
-
     }
 }

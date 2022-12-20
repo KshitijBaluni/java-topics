@@ -14,7 +14,9 @@ public class AppendInArraylist {
      * @param x-element to append
      */
     ArrayList<Integer> fia = new ArrayList<Integer>();
-    public void  arrayFind(int x){
+    public int  arrayFind(int x){
         fia.add(x);
+        return (fia.get(fia.size()-1));
+
     }
 }

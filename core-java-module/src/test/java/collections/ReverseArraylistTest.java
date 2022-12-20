@@ -3,11 +3,15 @@ package collections;
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Set;
+
+import static org.junit.Assert.assertEquals;
 
 public class ReverseArraylistTest {
     @Test
     public void reverseArraylist() {
-        ReverseArraylist reverseArraylist=new ReverseArraylist();
+        ReverseArraylist reverseArraylist = new ReverseArraylist();
         ArrayList<Integer> fia
                 = new ArrayList<Integer>();
         fia.add(2);
@@ -15,8 +19,7 @@ public class ReverseArraylistTest {
         fia.add(7);
         fia.add(9);
         fia.add(23);
-        reverseArraylist.arrayListUsingIntegerArray(fia);
-        for (int x: fia)
-            System.out.println(x);
+        ArrayList<Integer> arr = reverseArraylist.arrayListUsingIntegerArray(fia);
+        assertEquals(Arrays.asList(23, 9, 7, 4, 2), arr);
     }
 }
