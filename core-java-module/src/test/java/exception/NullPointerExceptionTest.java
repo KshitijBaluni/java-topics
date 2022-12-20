@@ -2,7 +2,7 @@ package exception;
 
 public class NullPointerExceptionTest {
     public static void main(String[] args) {
-        NullPointerException nullPointerException=new NullPointerException();
+        NullPointerExceptionProg nullPointerException=new NullPointerExceptionProg();
         nullPointerException.nullPointer("ankit");
     }
 

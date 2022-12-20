@@ -1,6 +1,6 @@
 package exception;
 
-public class NullPointerException {
+public class NullPointerExceptionProg {
     /**
      * NullPointer exception
      *
@@ -22,7 +22,7 @@ public class NullPointerException {
                 System.out.println("ankit is not present");
             }
 
-        } catch (java.lang.NullPointerException e) {
+        } catch (NullPointerException e) {
             System.out.println("String is null " + e);
 
         }

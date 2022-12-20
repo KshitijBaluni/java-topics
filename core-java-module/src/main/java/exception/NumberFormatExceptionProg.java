@@ -1,6 +1,6 @@
 package exception;
 
-public class NumberFormatException {
+public class NumberFormatExceptionProg {
     /**
      * NumberFormatException exception
      *
@@ -17,7 +17,7 @@ public class NumberFormatException {
         try {
             Integer.parseInt(x);
         }
-        catch (java.lang.NumberFormatException e){
+        catch (NumberFormatException e){
             System.out.println("format is not correct");
         }
     }

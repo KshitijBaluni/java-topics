@@ -6,7 +6,7 @@ package exception;
  * @since 14 Dec 2022
  */
 
-public class ArithmeticException {
+public class ArithmeticExceptionProg {
     /**
      * Divide x by y and catch arithmetic exception
      * Unchecked Exception
@@ -22,7 +22,7 @@ public class ArithmeticException {
             div = x / y;
 
             System.out.println(div);
-        } catch (java.lang.ArithmeticException e) {
+        } catch (ArithmeticException e) {
             System.out.println("cant divide by 0 " + e);
         }
     }
