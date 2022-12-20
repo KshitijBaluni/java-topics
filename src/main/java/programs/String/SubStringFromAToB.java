@@ -1,10 +1,11 @@
 package programs.String;
 /**
  * Substring From A to B
- * @author ankitrawat
+ *
+ * @author Ankit Rawat
  * @since 09 Dec 2022
  */
-public class SubstringFromAToB {
+public class SubStringFromAToB {
     /**
      * Store substring of A to B from index a to b using substring inbuilt function
      *
@@ -24,7 +25,7 @@ public class SubstringFromAToB {
      * @param n-index of point b
      * @return substring
      */
-    public String dropstringArr(String s, int m, int n) {
+    public String dropStringArr(String s, int m, int n) {
         String subString = "";
         char[] arr = s.toCharArray();
         for (int i = m; i < n; i++) {
