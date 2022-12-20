@@ -2,8 +2,8 @@ package programs.String;
 /**
  * Binary String
  *
- * @author AnkitRawat
- *  @since 09 Dec 2022
+ * @author Ankit Rawat
+ * @since 09 Dec 2022
  */
 public class BinaryString {
     /**
