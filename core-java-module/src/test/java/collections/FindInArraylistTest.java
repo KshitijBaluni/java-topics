@@ -1,8 +1,11 @@
 package collections;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.ArrayList;
+
+import static org.junit.Assert.*;
 
 public class FindInArraylistTest {
     @Test
@@ -16,10 +19,6 @@ public class FindInArraylistTest {
         fia.add(23);
         FindInArraylist findInArraylist=new FindInArraylist(fia,23);
         boolean result=findInArraylist.arrayFind();
-
-        if (result==true)
-            System.out.println("element is present in the array");
-        else
-            System.out.println("Element is not present in array");
+        assertTrue(result);
     }
 }

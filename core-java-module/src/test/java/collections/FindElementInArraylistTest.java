@@ -4,6 +4,8 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 
+import static org.junit.Assert.assertEquals;
+
 public class FindElementInArraylistTest {
     @Test
     public void arrayFind() {
@@ -16,6 +18,6 @@ public class FindElementInArraylistTest {
         fia.add(9);
         fia.add(23);
         int index=findElementInArraylist.arrayFind(fia, 7);
-        System.out.println("Element is present in  "+index);
+        assertEquals(2,index);
     }
 }

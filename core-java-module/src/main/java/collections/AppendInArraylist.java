@@ -13,8 +13,8 @@ public class AppendInArraylist {
      *
      * @param x-element to append
      */
+    ArrayList<Integer> fia = new ArrayList<Integer>();
     public void  arrayFind(int x){
-        ArrayList<Integer> fia = new ArrayList<Integer>();
         fia.add(x);
     }
 }

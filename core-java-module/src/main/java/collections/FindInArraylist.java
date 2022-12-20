@@ -9,12 +9,11 @@ import java.util.ArrayList;
  */
 
 public class FindInArraylist {
-    /**
+     /**
      *Parameterized Constructor
      *
      * @param arr-arraylist
      * @param x- element to find
-
      */
     private ArrayList<Integer> arr;
     private int x;

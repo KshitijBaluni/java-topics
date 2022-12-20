@@ -11,16 +11,30 @@ public class ArrayListDog {
      */
     public static class Dog {
         String breed;
+        public Dog(String breed)
+        {
+            this.breed=breed;
+        }
 
         public Dog(){
 
         }
-
+        /**
+         * Get breed name
+         *
+         * @return breed
+         */
         public String getBreed() {
+
             return breed;
         }
-
-        public void setBreed(String breed) {
+        /**
+         * Set breed name
+         *
+         * @param breed
+         */
+        public void setBreed(String breed)
+        {
             this.breed = breed;
         }
 
@@ -29,9 +43,7 @@ public class ArrayListDog {
          *
          * @param breed
          */
-        public Dog(String breed){
-            this.breed=breed;
-        }
+
 
     }
 }

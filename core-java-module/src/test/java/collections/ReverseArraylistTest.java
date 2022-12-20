@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class ReverseArraylistTest {
     @Test
-    public void reverseArraylist {
+    public void reverseArraylist() {
         ReverseArraylist reverseArraylist=new ReverseArraylist();
         ArrayList<Integer> fia
                 = new ArrayList<Integer>();
@@ -15,7 +15,7 @@ public class ReverseArraylistTest {
         fia.add(7);
         fia.add(9);
         fia.add(23);
-        reverseArraylist.arraylistUsingIntegerArray(fia);
+        reverseArraylist.arrayListUsingIntegerArray(fia);
         for (int x: fia)
             System.out.println(x);
     }

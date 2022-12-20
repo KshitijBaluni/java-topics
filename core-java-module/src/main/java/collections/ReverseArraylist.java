@@ -8,14 +8,14 @@ import java.util.ArrayList;
  * @since 16 Dec 2022
  */
 public class ReverseArraylist {
-    /**
+
+     /**
      *Reverse Arraylist using 2nd arraylist
      *
      * @param arr-arraylist
      * @return arr- reverse arraylist
      */
     public ArrayList<Integer> reverseArraylist(ArrayList<Integer> arr) {
-
         ArrayList<Integer> reverseArrayList = new ArrayList<Integer>(arr);
         Object[] arr2=arr.toArray();
         int z=0;
@@ -24,19 +24,15 @@ public class ReverseArraylist {
             arr.add(z,reverseArrayList.get(i));
             z++;
         }
-        System.out.println(arr);
         return arr;
     }
-
-    public ArrayList<Integer> arraylistUsingIntegerArray(ArrayList<Integer> arr) {
-
-        /**
-         *Reverse Arraylist using 2nd Integer array
-         *
-         * @param arr-arraylist
-         * @return arr- reverse arraylist
-         */
-
+     /**
+     *Reverse Arraylist using 2nd Integer array
+     *
+     * @param arr-arraylist
+     * @return arr- reverse arraylist
+     */
+    public ArrayList<Integer> arrayListUsingIntegerArray(ArrayList<Integer> arr) {
         int[] inrArray=new int[arr.size()];
         int z=0;
         for (int x: arr){
