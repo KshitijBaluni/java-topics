@@ -16,26 +16,26 @@ public class CoreJavaException {
    * Demo for Null Pointer Exception.
    * Unchecked Exception.
    */
- // public static void nullPointerException() {
-   // try {
-     // String testNull = null;
-      //testNull.toString();
-    //} catch (NullPointerException e) {
-     // logger.log(Level.INFO, e.getStackTrace().toString());
-    //}
-  //}
+  public static void nullPointerException() {
+    try {
+      String testNull = null;
+      testNull.toString();
+    } catch (NullPointerException e) {
+      logger.log(Level.INFO, e.getStackTrace().toString());
+    }
+  }
 
   /***
    * Demo for Arithmetic Exception.
    * Unchecked Exception.
    */
- // public static void arithmeticException() {
-   // try {
-     // int a = 5 / 0;
-    //} catch (ArithmeticException e) {
-     // logger.log(Level.INFO, e.getStackTrace().toString());
-    //}
-  //}
+  public static void arithmeticException() {
+    try {
+      int a = 5 / 0;
+    } catch (ArithmeticException e) {
+      logger.log(Level.INFO, e.getStackTrace().toString());
+    }
+  }
 
   /***
    * Demo for ArrayIndexOutOfBoundException.
