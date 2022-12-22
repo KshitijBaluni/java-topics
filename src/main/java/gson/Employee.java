@@ -65,7 +65,11 @@ public class Employee {
         this.totalYearsInComp = totalYearsInComp;
     }
 
-
+    /**
+     * overriding toString function
+     *
+     * @preturn string
+     */
     public String toString()
     {
         return "Employee [name=" + name+ ", Total years in company=" + totalYearsInComp + ", salary=" + salary + "]";
