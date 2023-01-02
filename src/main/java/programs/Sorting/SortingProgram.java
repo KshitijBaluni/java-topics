@@ -14,17 +14,17 @@ public class SortingProgram {
      * Sort using for loop
      *
      * @param arr-array to sort
-     * @return arr- sorted array
+     * @return arr-sorted array
      */
     public int[] loopSort(int[]arr){
-        for (int i=0; i<arr.length;i++){
-            for (int j=i+1;j< arr.length;j++){
-                int temp=0;
-                if(arr[j]<arr[i]){
-                    temp=arr[i];
-                    arr[i]=arr[j];
-                    arr[j]=temp;
-                }
+
+        for (int i = 0; i < arr.length - 1; i++) {
+            if (arr[i] > arr[i + 1]) {
+
+                int temp = arr[i];
+                arr[i] = arr[i+ 1];
+                arr[i+ 1] = temp;
+                i=-1;
             }
         }
         return arr;
