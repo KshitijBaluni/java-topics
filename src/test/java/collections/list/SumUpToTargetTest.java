@@ -26,4 +26,13 @@ public class SumUpToTargetTest {
         assertTrue(Arrays.equals(indexes, ind));
 
     }
+
+    @Test
+    public void findIndexWithoutNest(){
+        int[]arr={4,5,7,2,8,5,9,11};
+        int []indexes={4,0};
+        SumUpToTarget sumUpToTarget=new SumUpToTarget();
+        int[]ind=sumUpToTarget.findIndexWithoutNest(arr,12);
+        assertTrue(Arrays.equals(indexes, ind));
+    }
 }
