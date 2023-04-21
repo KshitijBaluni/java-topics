@@ -1,4 +1,4 @@
-Core Java Topics... Version 1.0
+Core Java Topics... Version 2.0
 1. Basics of Java
 2. Class Objects and Types of classes
 3. Packages in Java.
@@ -31,7 +31,7 @@ Core Java Topics... Version 1.0
 30. Design Pattern
 31. Databases
 
-Other Advance Concepts(Interview):
+Other Advance Concepts:
 1. Solid Design Patterns
 2. Immutable class (how to make List immutable)
 3. Shallow and Deep Copy
@@ -49,3 +49,16 @@ Other Advance Concepts(Interview):
     (https://www.geeksforgeeks.org/what-is-java-executor-framework/)
 15. Docker Containers
 16. ECS and EKS for docker container managements
+
+Effective Java by Joshua Bloch
+
+Chapter 2: Creating and Destroying Objects
+1. Consider static factory methods instead of constructors.
+2. Consider a builder when faced with many constructor parameters
+3. Enforce the singleton property with a private constructor or an enum type
+4. Enforce non-instantiability with a private constructor
+5. Prefer dependency injection to hardwiring resources
+6. Avoid creating unnecessary objects
+7. Eliminate obsolete object references
+8. Avoid finalizers and cleaners
+9. Prefer try -with-resources to try - finally
