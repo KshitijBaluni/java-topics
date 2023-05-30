@@ -17,7 +17,7 @@ public class CoreJavaStringsAnagram {
      * @param b String Two
      * @return true or false
      */
-    private static boolean isAnagram(String a, String b) {
+    public static boolean isAnagram(String a, String b) {
         if (a.length() != b.length())
             return false;
 
