@@ -19,7 +19,7 @@ Core Java Topics... Version 2.0
 18. Garbage Collection
 19. Streams Api
 20. Collections framework
-21. serialization
+21. Serialization
 22. Exception Handling in Java
 23. Java Annotation
 24. Reflection in Java
@@ -36,11 +36,11 @@ Other Advance Concepts:
 2. Immutable class (how to make List immutable)
 3. Shallow and Deep Copy
 4. Singleton Design Pattern (how to fail singleton Design Pattern (Using threads))
-5. serialization Concepts
+5. Serialization Concepts
 6. Marshalling and UnMarshalling (JAXB)
 7. JWT 
 8. Spring Security
-9. ack and nack
+9. Ack and Nack
 10. Durable Subscriber
 11. Async Transaction
 12. Saga and 2 phase commit

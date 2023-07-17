@@ -1,0 +1,125 @@
+-Intro
+ Current Role
+ About your education and childhood
+ about your City
+
+-Tech Stack
+  Java
+  AWS - Services SNS
+  BDD - cucumber
+  Gradle
+  Github - CI/CD GA
+  RestAssured
+  Selenium
+  Node Js
+  Terraform
+  Mysql Workbench
+
+-About the Project
+  Fintech Security
+  Feature LN Equifax Experian and TransUnion
+
+-Role and Things done in the Project
+  Create the BDD framework
+  Testcases and Testplan
+  Create Feature wise regression test
+  Support Mock API (Zuora,Injection Alert)
+  Integrating 3rd Party tools
+	   Testrail
+	   slack
+	   Mailasour
+	   SFTP
+	   AWS
+	   Csv
+	   Json
+  Creating and Maintaining ticket in Agile
+  Review PR
+  Scrum 2 week sprints
+
+
+
+  -----------------------------------------------------------
+  Java
+  1. Strings
+  2. Streams
+  3. Maths
+
+
+  Linkedin -
+  1. Examples and solution (logics and path)
+
+  2. say no if not know
+
+  3. why join ASML (add to asml growth - challanges and growth)
+     DUV, EUV and High NA EUV lithographhy
+
+  4. Why want to joint Netherlands? (outspoken/polish this)
+
+  5. Monolythic and Miocroservice
+  Ask questions for Interview (Project related) Vison related
+  follow up for the Questions ?
+  Manageral and Leadership role
+  willing to learn new things (give examples for AWS Node etc new learing)
+  ASML videos on Youtube/ Working culture in netherlands
+  you will feel heard with eglatarian
+
+
+  is my switch good ?
+  can i share the projects ?
+
+ISTQB
+TEST
+
+
+
+  "A new account was added to your credit report"
+
+  assertAggregator.assertEquals(String.format("%s-%s", "123457862", world.getUserId()),
+        alertMap.get("id"), new Throwable());
+
+
+1. ASML values and culture innovation pioneer patents
+2. Netherlands dutch culture examples
+3. ASML anually report on Investors : https://www.asml.com/en/investors/annual-report
+
+
+
+
+1. Why to relocate ?
+2. Why netherlands?
+3. About ASML?
+4. Straight forward answer and then explain conclusion
+5. How you profile is a match for ASML SDET? (Java + Automation)
+
+
+Tell me about your self -> Strength weaknesses -> Behavioural -> Why ASML/Netherlands -> Questions
+
+
+Selenium,Apium,Brower Stack
+
+
+
+1. Buyoff option (not metioned in the contract)
+2. 19 PL and 7 CL = 26  can be adjusted
+3. I can work from onsite if help is needed
+4. Financial support the family (home and edu loan)
+5. Notice period
+6. No depedencies for work
+
+
+House Related:
+--------------------------------
+1. Near ASML
+2. Pets Allowed - Yes
+3. No Owner interferance
+4. Area 35m2 >
+5. Rent 1200-1400 Euro
+6. Long Term stay
+7. Rent and Advance payment?
+8. Rental agreement for a definite period of 24 months ?
+
+Visa Related Questions?
+---------------------------------------
+1. Visa process
+2. Timeline
+3. How sure ? is there a possibility of rejection or timedelay
